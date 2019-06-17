@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="cart-container">
+        $0
+    </div>
+    <div id="user-data">
+        <form action="data/cartSubmit.json" id="cart-form" method="post">
+            <br>
+            <label for="">Name</label>
+            <input type="text" name="name">
+            <br>
+            <label for="">Email</label>
+            <input type="text" name="email">
+            <br>
+            <label for="">Newsletter?</label>
+            <input name="newsletter" type="checkbox" checked id="newsletter-checkbox">
+            <br>
+            <select name="newsletter-frequency" id="Newsletter-frequency">
+                <option value="">-</option>
+                <option value="" selected>Weekly</option>
+                <option value="">Monthly</option>
+            </select>
+            <br>
+            <button id="submit-cart">Submit</button>
+        </form>
+        <div id="feedback-message"></div>
+    </div>
+
+    <div id="admin-container">
+        <input id="input-create-item" type="text"></input>
+        <button id="button-create-item">Add</button>
+    </div>
+    <div id="container">
+        <div class="item">
+            <div class="name">Anciant Iran</div>
+            <img src="assets/women.jpg" alt="">
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</div>
+            <div class="price">499</div>
+            <button class="item-add">Add to cart</button>
+            <button class="item-remove">Remove</button>
+            <br />
+            <a class="more-info-link" href="#">More info</a>
+            <div class="more-info">Lorem ipsum dolor sit amet</div>
+        </div>
+        <br style="clear: left;" />
+    </div>
+
+</body>
+
+</html>

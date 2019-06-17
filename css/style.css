@@ -1,0 +1,47 @@
+body{
+    background-color: #EEE;
+}
+#container{
+    padding: 12px;
+    margin: 12px;
+    height: 100%;
+    background-color: wheat;
+
+}
+#cart-container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin-left: 0;
+}
+#Newsletter-frequency{
+    display: none;
+}
+.item{
+    height: 100%;
+    width: 320px;
+    background-color: #DDD;
+    padding: 8px;
+    float: left;
+    margin: 8px;
+
+}
+.item img{
+    height: 100%;
+}
+.item .name{
+    font-size: 24px;
+}
+.item .price{
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+.item .discription{
+    display: flex;
+    flex-direction: column;
+}
+.item .more-info{
+    display: none;
+}
